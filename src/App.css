@@ -1,0 +1,97 @@
+.app-header{
+  background: black !important;
+  display: flex;
+}
+
+.select-form-container {
+  max-width: 90%;
+  margin: 10px auto 0;
+}
+
+#profile-view {
+  margin: 5px auto;
+  background: white;
+  width: 90%;
+  min-height: 400px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+#patient-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#patient-name,
+#patient-dob,
+#patient-height,
+#patient-weight {
+  margin: 4px 0;
+}
+
+#patient-records-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 85%;
+  display: table;
+  margin: 0px auto 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr th:first-child,
+tr td:first-child {
+  padding-left: 12px;
+}
+
+thead tr {
+  height: 32px;
+}
+
+thead tr th {
+  text-align: start;
+  font-weight: 800;
+}
+
+tbody tr {
+  height: 40px;
+}
+
+tbody tr:nth-child(odd) {
+  background: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  flex: 1 1 100%;
+  min-width: 40%;
+  color: #555;
+  margin: 22px 12px;
+}
+
+.select select {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 2.25rem 0.5rem 1rem;
+  color: #555;
+  background-color: #eee;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button {
+  height: 30px;
+  margin: 0;
+}
