@@ -33,22 +33,22 @@ const Records = ({ patient, onNext }) => {
       <table id="patient-records-table">
         <thead id="table-header">
           <tr>
-            <th>SL</th> {/* Serial number for records */}
-            <th>Date</th> {/* Date of the medical record */}
-            <th>Diagnosis</th> {/* Diagnosis name */}
-            <th>Weight</th> {/* Patient weight at the time of record */}
-            <th>Doctor</th> {/* Name of the doctor who attended the patient */}
+            <th>SL</th>
+            <th>Date</th>
+            <th>Diagnosis</th>
+            <th>Weight</th>
+            <th>Doctor</th>
           </tr>
         </thead>
         <tbody id="table-body" data-testid="patient-table">
           {/* Loop through patient's medical records and display them in a table */}
           {patient.data.map((record, index) => (
             <tr key={record.id}>
-              <td>{index + 1}</td> {/* Serial number */}
-              <td>{formatDate(record.timestamp)}</td> {/* Formatted timestamp */}
-              <td>{record.diagnosis.name}</td> {/* Diagnosis name */}
-              <td>{record.meta.weight} kg</td> {/* Weight in kg */}
-              <td>{record.doctor.name}</td> {/* Doctor's name */}
+              <td>{index + 1}</td>
+              <td>{formatDate(record.timestamp)}</td>
+              <td>{record.diagnosis.name}</td>
+              <td>{record.meta.weight} kg</td>
+              <td>{record.doctor.name}</td>
             </tr>
           ))}
         </tbody>
